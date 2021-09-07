@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root { 
+    --success-solor: #1a924c;
+    --error-color: #b9302b;
+}
+
+*{
+    box-sizing: border-box
+}
+
+img { 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%
+  }
+  
+
+html { 
+    height: 100%;
+    width:auto;
+}
+body {
+    background-color: #f9fafb;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    height: 100%;
+}
+
+
+.container { 
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 20px;
+    box-shadow: 0 4px 50px rgb(0,0,0,0.3);
+    width: 450px;
+    position: absolute;
+}
+
+ h2{
+     text-align: center;
+     margin: 0 0 20px
+ }
+
+.form{
+    padding: 30px 40px
+}
+
+.form-control { 
+    margin-bottom: 0px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.form-control label { 
+    color: rgb(122, 121, 121);
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.form-control input {
+
+    border: solid #eeecece5;
+    border-radius: 30px;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: rgb(38, 124, 19);
+    border-radius: 30px;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small { 
+    color: var(--error-color);
+    bottom : 0;
+    left : 0;
+    visibility  : hidden;
+    margin-top : 20px;
+    margin-left :  10px;
+
+}
+
+.form-control.error small { 
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: rgb(24, 80, 12);
+    border-radius: 30px rgb(24, 80, 12);
+    border-radius: 30px;
+    color:#fff;
+    display: block;
+    padding: 3px;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 15px;
+}
+.ending { 
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+}
